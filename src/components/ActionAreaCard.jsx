@@ -16,9 +16,9 @@ export default function ActionAreaCard(props) {
   const handleMenuClick = (pageURL) => {
     // console.log(pageURL);
     if (pageURL == "BarGraphSort") {
-      navigate("/barsort");
+      navigate("/SortingVisualizer/barsort");
     } else if (pageURL == "BoxSort") {
-      navigate("/boxsort");
+      navigate("/SortingVisualizer/boxsort");
     }
   };
 

@@ -38,12 +38,18 @@ export const App = () => {
         <Container>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/boxsort" element={<Boxsort />} />
-            <Route path="/barsort" element={<BarGraphSort />} />
-            <Route path="/algorithms" element={<Algorithms />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/SortingVisualizer" element={<Home />} />
+            <Route path="/SortingVisualizer/home" element={<Home />} />
+            <Route path="/SortingVisualizer/boxsort" element={<Boxsort />} />
+            <Route
+              path="/SortingVisualizer/barsort"
+              element={<BarGraphSort />}
+            />
+            <Route
+              path="/SortingVisualizer/algorithms"
+              element={<Algorithms />}
+            />
+            <Route path="/SortingVisualizer/about" element={<About />} />
           </Routes>
         </Container>
       </Router>

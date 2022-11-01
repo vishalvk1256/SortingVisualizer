@@ -71,13 +71,16 @@ function Header(props) {
   );
 
   const [onHome, setOnHome] = React.useState(
-    location.pathname == "/home" ? true : false
+    location.pathname == "/SortingVisualizer" ||
+      location.pathname == "/SortingVisualizer/home"
+      ? true
+      : false
   );
   const [onAbout, setOnAbout] = React.useState(
-    location.pathname == "/about" ? true : false
+    location.pathname == "/SortingVisualizer/about" ? true : false
   );
   const [onDoc, setOnDoc] = React.useState(
-    location.pathname == "/algorithms" ? true : false
+    location.pathname == "/SortingVisualizer/algorithms" ? true : false
   );
 
   const handleMenuClick = (pageURL) => {
@@ -86,17 +89,17 @@ function Header(props) {
       setOnHome(true);
       setOnAbout(false);
       setOnDoc(false);
-      navigate("/home");
+      navigate("/SortingVisualizer/home");
     } else if (pageURL == "About") {
       setOnHome(false);
       setOnAbout(true);
       setOnDoc(false);
-      navigate("/about");
+      navigate("/SortingVisualizer/about");
     } else if (pageURL == "Algorithms") {
       setOnHome(false);
       setOnAbout(false);
       setOnDoc(true);
-      navigate("/algorithms");
+      navigate("/SortingVisualizer/algorithms");
     }
   };
 
