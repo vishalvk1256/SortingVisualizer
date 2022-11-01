@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* overflow: hidden; */
+  /* background-color: rgba(209, 233, 255, 1); */
+}
+
+.container {
+  font-size: 3rem;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.app {
+  height: 100vh;
+  /* width: 100vw; */
+  background-color: aliceblue;
+}
+
+.hero {
+  display: flex;
+  background-color: aliceblue;
+  /* background-color: rgba(209, 233, 255, 1); */
+  justify-content: center;
+}
+.hero .static-txt {
+  /* color: #fff; */
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  /* align-content: center; */
+  color: black;
+  align-items: center;
+}
+.hero .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  /* color: #16f37d; */
+  color: #00c15a;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 100%;
+  width: 100%;
+  /* background: #000; */
+  background: aliceblue;
+  border-left: 2px solid #16f37d;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}

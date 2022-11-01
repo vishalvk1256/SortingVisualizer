@@ -1,0 +1,57 @@
+{
+  "homepage": "http://vishalvk1256.github.to/SortingVisualizer",
+  "name": "sorting",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:start": "cd dist && PORT=8080 npx serve",
+    "start": "webpack serve --open --mode development",
+    "start:live": "webpack serve --open --mode development --live-reload --hot"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jack Herrington",
+    "email": "jherr@pobox.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@material-ui/core": "^4.11.3",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.11",
+    "@mui/styled-engine": "^5.10.8",
+    "babel-plugin-prismjs": "^2.1.0",
+    "emailjs-com": "^3.2.0",
+    "gh-pages": "^4.0.0",
+    "prismjs": "^1.29.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-hook-form": "^7.38.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^6.4.2",
+    "react-toastify": "^9.0.8",
+    "react-use": "^17.2.4",
+    "styled-components": "^5.2.3",
+    "zustand": "^3.5.1"
+  }
+}
