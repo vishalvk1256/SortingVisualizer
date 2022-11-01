@@ -41,6 +41,7 @@ function Home() {
       >
         <ActionAreaCard
           image="SortingVisualizer/sorting.png"
+          dummy="SortingVisualizer/boxsort.png"
           alt="BarGraphSort"
           title="BarGraph Sort"
           description={
@@ -49,6 +50,7 @@ function Home() {
         />
         <ActionAreaCard
           image="SortingVisualizer/boxsort.png"
+          dummy="SortingVisualizer/boxsort.png"
           alt="BoxSort"
           title="Box Sort"
           description={
