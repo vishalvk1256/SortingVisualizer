@@ -18,10 +18,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta property="og:image" content="../img/png/sorting.png" />
-    <title>
-      Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix) -
-      VisuAlgo
-    </title>
+    <title>Sorting (Bubble, Selection, Insertion, Merge, Quick)</title>
     <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../img/favicon.png" />
@@ -467,9 +464,9 @@
             <a id="title-Insertion">Insert</a>
             <a id="title-Merge">Merge</a>
             <a id="title-Quick">Quick</a>
-            <a id="title-RandomizedQuick">R-Quick</a>
-            <a id="title-Counting">Count</a>
-            <a id="title-Radix">Radix</a>
+            <!-- <a id="title-RandomizedQuick">R-Quick</a> -->
+            <!-- <a id="title-Counting">Count</a> -->
+            <!-- <a id="title-Radix">Radix</a> -->
           </span>
         </span>
       </nav>
@@ -845,14 +842,23 @@
       // surprise colour!
       // Referenced to in  home.js and viz.js also
       var colourArray = [
-        "#52bc69",
-        "#d65775" /*"#ed5a7d"*/,
-        "#2ebbd1",
-        "#d9513c",
-        "#fec515",
-        "#4b65ba",
-        "#ff8a27",
-        "#a7d41e",
+        // "#52bc69",
+        // "#d65775" /*"#ed5a7d"*/,
+        // "#2ebbd1",
+        // "#d9513c",
+        // "#fec515",
+        // "#4b65ba",
+        // "#ff8a27",
+        // "#a7d41e",
+
+        "#00a323",
+        "#00a323" /*"#ed5a7d"*/,
+        "#00a323",
+        "#00a323",
+        "#00a323",
+        "#00a323",
+        "#00a323",
+        "#00a323",
       ]; // green, pink, blue, red, yellow, indigo, orange, lime
 
       function disableScroll() {
@@ -871,6 +877,7 @@
         var generatedColours = new Array();
         while (generatedColours.length < 4) {
           var n = Math.floor(Math.random() * colourArray.length);
+          // var n = 1;
           if ($.inArray(n, generatedColours) == -1) generatedColours.push(n);
         }
         return generatedColours;
@@ -5365,22 +5372,23 @@
 
       // sorting action
       var actionsWidth = 150;
-      var statusCodetraceWidth = 420;
+      var statusCodetraceWidth = 500;
 
+      //changed1
       // local
       $(function () {
         AbbreviateTitle();
         var eight_modes = [
           "Bubble",
-          "Selection",
-          "Insertion",
-          "Merge",
-          "Quick",
-          "RandomizedQuick",
-          "Counting",
-          "Radix",
+          // "Selection",
+          // "Insertion",
+          // "Merge",
+          // "Quick",
+          // "RandomizedQuick",
+          // "Counting",
+          // "Radix",
         ];
-        $("#title-" + eight_modes[Math.floor(Math.random() * 8)]).click(); // randomly open one of the eight sorting algorithm mode every time
+        $("#title-" + eight_modes[Math.floor(Math.random() * 1)]).click(); // randomly open one of the eight sorting algorithm mode every time
         $("#play").hide();
 
         d3.selectAll("#radix-sort-bucket-labels-collection span").style({
@@ -5409,16 +5417,22 @@
 
       // title changing
       function AbbreviateTitle() {
-        $("#title-Bubble").text("BUB").attr("title", "Bubble Sort");
-        $("#title-Selection").text("SEL").attr("title", "Selection Sort");
-        $("#title-Insertion").text("INS").attr("title", "Insertion Sort");
-        $("#title-Merge").text("MER").attr("title", "Merge Sort");
-        $("#title-Quick").text("QUI").attr("title", "Quick Sort");
-        $("#title-RandomizedQuick")
-          .text("R-Q")
-          .attr("title", "Random Quick Sort");
-        $("#title-Counting").text("COU").attr("title", "Counting Sort");
-        $("#title-Radix").text("RAD").attr("title", "Radix Sort");
+        // $("#title-Bubble").text("BUB").attr("title", "Bubble Sort");
+        // $("#title-Selection").text("SEL").attr("title", "Selection Sort");
+        // $("#title-Insertion").text("INS").attr("title", "Insertion Sort");
+        // $("#title-Merge").text("MER").attr("title", "Merge Sort");
+        // $("#title-Quick").text("QUI").attr("title", "Quick Sort");
+        // $("#title-RandomizedQuick")
+        //   .text("R-Q")
+        //   .attr("title", "Random Quick Sort");
+        // $("#title-Counting").text("COU").attr("title", "Counting Sort");
+        // $("#title-Radix").text("RAD").attr("title", "Radix Sort");
+
+        $("#title-Bubble").text("Bubble").attr("title", "Bubble Sort");
+        $("#title-Selection").text("Selection").attr("title", "Selection Sort");
+        $("#title-Insertion").text("Insertion").attr("title", "Insertion Sort");
+        $("#title-Merge").text("Merge").attr("title", "Merge Sort");
+        $("#title-Quick").text("Quick").attr("title", "Quick Sort");
       }
       $("#title-Bubble").click(function () {
         showStandardCanvas();

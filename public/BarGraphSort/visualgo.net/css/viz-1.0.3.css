@@ -201,7 +201,8 @@ html {
   background: #777;
 }
 #current-action {
-  bottom: 320px;
+  /* bottom: 320px; */
+  bottom: 570px;
   right: 60px;
   width: 400px;
   display: block;
@@ -260,18 +261,29 @@ html {
   font-weight: 700;
 }
 #status {
-  bottom: 255px;
+  /* bottom: 255px;
   right: 43px;
   height: 54px;
+  white-space: normal; */
+
+  bottom: 500px;
+  right: 43px;
+  height: 60px;
   white-space: normal;
+  font-size: 17px;
 }
 #status p {
   padding: 10px;
 }
 #status-hide {
-  bottom: 255px;
+  /* bottom: 255px;
+  right: 0;
+  padding: 19px 14px 19px 15px; */
+
+  bottom: 504px;
   right: 0;
   padding: 19px 14px 19px 15px;
+
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -279,10 +291,15 @@ html {
   -moz-transform: rotate(180deg);
 }
 #codetrace {
-  bottom: 60px;
+  /* bottom: 60px;
   right: 43px;
   height: 192px;
+  font-family: courier new, Courier, monospace; */
+  bottom: 255px;
+  right: 43px;
+  height: 240px;
   font-family: courier new, Courier, monospace;
+  font-size: 18px;
 }
 #codetrace p {
   padding: 5px 10px;
@@ -291,9 +308,13 @@ html {
   background: #000;
 }
 #codetrace-hide {
-  bottom: 60px;
+  /* bottom: 60px;
   right: 0;
-  padding: 88px 14px 88px 15px;
+  padding: 88px 14px 88px 15px; */
+  bottom: 257px;
+  right: 0;
+  padding: 134px 14px 88px 15px;
+
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);

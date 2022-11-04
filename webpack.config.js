@@ -4,8 +4,8 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    // publicPath: "http://localhost:8080/",
-    publicPath: "/SortingVisualizer/",
+    publicPath: "http://localhost:8080/",
+    // publicPath: "/SortingVisualizer/",
   },
 
   resolve: {
@@ -31,12 +31,16 @@ module.exports = {
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
+      },
+      {
         test: /\.html$/i,
         loader: "html-loader",
-        options: {
-          // Disables attributes processing
-          sources: false,
-        },
       },
       {
         test: /\.(ts|tsx|js|jsx)$/,

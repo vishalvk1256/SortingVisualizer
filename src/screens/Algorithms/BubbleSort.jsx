@@ -9,6 +9,11 @@ import PropTypes from "prop-types";
 
 import ComplexityTable from "../ComplexityTable";
 
+import bubbleC from "../../AlgoCodes/Bubble/c.html";
+
+import html from "../../AlgoCodes/file.html";
+var htmlDoc = { __html: bubbleC };
+
 // import Prism from "prismjs";
 // import "./prism.css";
 
@@ -163,24 +168,25 @@ export default function BubbleSort() {
             index={0}
             // style={{ padding: "0 24px 24px 24px" }}
           >
-            {/* <Typography style={{ color: "white" }}>C</Typography> */}
-            <div dangerouslySetInnerHTML={iframe("c")} />
+            {/* <div dangerouslySetInnerHTML={iframe("c")} /> */}
+            <iframe
+              style={{ position: "relative", height: "100vh", width: "100%" }}
+              src="./Bubble/c.html"
+            ></iframe>
+            {/* <div dangerouslySetInnerHTML={htmlDoc} /> */}
           </TabPanel>
           <TabPanel value={value} index={1}>
-            {/* <Typography style={{ color: "white" }}>C++</Typography> */}
             <div dangerouslySetInnerHTML={iframe("cpp")} />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            {/* <Typography style={{ color: "white" }}>JAVA</Typography> */}
             <div dangerouslySetInnerHTML={iframe("java")} />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            {/* <Typography style={{ color: "white" }}>PYTHON</Typography> */}
             <div dangerouslySetInnerHTML={iframe("python")} />
           </TabPanel>
         </Box>
       </Box>
-      {/* <ComplexityTable avg={""} best= {""} worst={""} space={""}/> */}
+
       <ComplexityTable
         avg={"O(n2)"}
         best={"O(n)"}

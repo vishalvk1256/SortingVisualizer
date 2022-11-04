@@ -2,6 +2,9 @@ import React from "react";
 import ActionAreaCard from "../components/ActionAreaCard";
 import "../index.css";
 
+import sorting from "../images/sorting.png";
+import boxsort from "../images/boxsort.png";
+
 function Home() {
   return (
     <div
@@ -40,8 +43,9 @@ function Home() {
         }}
       >
         <ActionAreaCard
-          image="./sorting.png"
-          dummy="SortingVisualizer/boxsort.png"
+          // image="./sorting.png"
+          // dummy="SortingVisualizer/boxsort.png"
+          image={sorting}
           alt="BarGraphSort"
           title="BarGraph Sort"
           description={
@@ -49,8 +53,9 @@ function Home() {
           }
         />
         <ActionAreaCard
-          image="./boxsort.png"
-          dummy="SortingVisualizer/boxsort.png"
+          // image="./boxsort.png"
+          // dummy="SortingVisualizer/boxsort.png"
+          image={boxsort}
           alt="BoxSort"
           title="Box Sort"
           description={
