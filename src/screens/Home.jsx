@@ -49,7 +49,8 @@ function Home() {
           alt="BarGraphSort"
           title="BarGraph Sort"
           description={
-            "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+            // "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+            "BarGraph Sort is a Visualization technique where the sorting is done with Step-by-Step explanation & visualized using bargraphs"
           }
         />
         <ActionAreaCard
@@ -59,7 +60,8 @@ function Home() {
           alt="BoxSort"
           title="Box Sort"
           description={
-            "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+            // "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+            "Box Sort is a Visualization technique, visualization is done using box animations & comaparisions can be done btw algorithms"
           }
         />
       </div>
